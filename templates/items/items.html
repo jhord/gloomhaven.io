@@ -1,0 +1,162 @@
+{% extends "header.html" %} 
+{% block content %}
+<div class="container">
+	<div class="jumbotron" style="text-align: center; line-height: 20px;">
+		<form class="form-horizontal">
+			<fieldset>
+				<!-- Text input-->
+				<div class="row form-group">
+					<div class="col-md-6">
+						<label class="col-md-6 control-label" for="head">Head</label>
+					</div>
+					<div class="col-md-6">
+						<input class="form-control input-md" id="head" name="head" placeholder="placeholder" type="text">
+					</div>
+				</div><!-- Text input-->
+				<div class="row form-group">
+					<label class="col-md-6 control-label" for="torso">Torso</label>
+					<div class="col-md-6">
+						<input class="form-control input-md" id="torso" name="torso" placeholder="placeholder" type="text">
+					</div>
+				</div><!-- Text input-->
+				<div class="row form-group">
+					<label class="col-md-6 control-label" for="legs">Legs</label>
+					<div class="col-md-6">
+						<input class="form-control input-md" id="legs" name="legs" placeholder="placeholder" type="text">
+					</div>
+				</div><!-- Text input-->
+				<div class="row form-group">
+					<label class="col-md-6 control-label" for="1hand">1 Hand Item</label>
+					<div class="col-md-6">
+						<input class="form-control input-md" id="1hand" name="1hand" placeholder="placeholder" type="text">
+					</div>
+				</div><!-- Text input-->
+				<div class="row form-group">
+					<label class="col-md-6 control-label" for="2hand">2 Hand Item</label>
+					<div class="col-md-6">
+						<input class="form-control input-md" id="2hand" name="2hand" placeholder="placeholder" type="text">
+					</div>
+				</div><!-- Textarea -->
+				<div class="row form-group">
+					<label class="col-md-6 control-label" for="smallitems">Small Items</label>
+					<div class="col-md-6">
+						<textarea class="form-control" id="smallitems" name="smallitems">default text</textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<button class="btn btn-primary btn-lg btn-block" type="button">Update</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div><!--<div class="jumbotron" style="text-align: center; line-height: 20px;">
+			<div class="col-sm-12">
+          	</div>
+          <div class="form-group" style="">
+				<div class="row">
+					<div class="col-sm-6">
+						<label>Head</label>
+					</div>
+					<div class="col-sm-6">
+						<input class="form-control" type="text">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<label>Torso</label>
+					</div>
+					<div class="col-sm-6">
+						<input class="form-control" type="text">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<label>Legs</label>
+					</div>
+					<div class="col-sm-6">
+						<input class="form-control" type="text">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<label>1 Hand Item</label>
+					</div>
+					<div class="col-sm-6">
+						<input class="form-control" type="text">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<label>Two Hand item</label>
+					</div>
+					<div class="col-sm-6">
+						<input class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<button class="btn btn-primary btn-lg btn-block" type="button">Update</button>
+				</div>
+			</div>
+		</div>
+	<!--<div class="container-fluid">
+		<div class="card text-center">
+		  <div class="card-header">
+			<!--<ul class="nav nav-tabs card-header-tabs">
+			  <li class="nav-item">
+				<a class="nav-link" href="/character/">Character</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" href="/items/">Items</a>
+			  </li>
+			</ul>
+		  </div>
+		<div class="card" style="width: 18rem;">
+		  <div class="card-body">
+			<table style="width:100%">
+			<tbody>
+			<tr>
+			<td><h5 class="card-title" align="center">{{post.chartyp}} Mind Thief</h5></td>
+			<td><button align="center" type="button" class="btn btn-light"><i class="fas fa-wrench"></i></button></td>
+			</tbody>
+			</tr>
+			</table>
+		  </div>
+		<table>
+		<tbody>
+		<tr>
+		<td>{{post.mychar}}</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>Head</td>
+		<td><span class="badge badge-primary badge-pill badge-secondary">{{post.head}}</span></td>
+		</tr>
+		<tr>
+		<td>Body</td>
+		<td><span class="badge badge-primary badge-pill badge-danger">{{post.body}}</span></td>
+		</tr>
+		<tr>
+		<td>Legs</td>
+		<td><span class="badge badge-primary badge-pill">{{post.legs}}</span></td>
+		</tr>
+		<tr>
+		<td>1 Hand Item</td>
+		<td><span class="badge badge-primary badge-pill badge-warning">{{post.onehand}}</span></td>
+		</tr>
+		<tr>
+		<td>2 Hand Item</td>
+		<td><span class="badge badge-primary badge-pill badge-warning">{{post.twohand}}</span></td>
+		</tr>
+		  <tr>
+		<td>Small Items</td>
+		<td><span class="badge badge-primary badge-pill badge-warning">{{post.small}}</span></td>
+		</tr>
+		</tbody>
+		</table>
+	<div>-->
+</body>
+{% endblock %}

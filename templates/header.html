@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gloomhaven.IO</title>
+	<meta charset="utf-8">
+	{% load staticfiles %}
+	<link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}" type='text/css'/>
+	<link rel='stylesheet' href="{% static 'css/all.css' %}" type='text/css'/>
+	<script type="text/css">
+	 .input { 
+		text-align: center; 
+	}
+	td {
+		text-allign: center;
+	}
+	</script>
+	<script src="{% static 'js/all.js' %}"></script>
+	<script src="{% static 'js/ticker.js' %}"></script>
+	<!--<script type="text/javascript">
+		$(document).ready(function(){
+		$('#qty_input').prop('disabled', true);
+		$('#plus-btn').click(function(){
+			$('#qty_input').val(parseInt($('#qty_input').val()) + 1 );
+				});
+			$('#minus-btn').click(function(){
+			$('#qty_input').val(parseInt($('#qty_input').val()) - 1 );
+			if ($('#qty_input').val() === 0) {
+				$('#qty_input').val(1);
+			}
+
+				});
+		});
+    </script>-->	
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<div>
+		{% with url_name=request.resolver_match.url_name %}
+		<ul class="nav nav-tabs" >
+			<li class="nav-item">
+				<a class="nav-link {% if url_name == "home" %}active{% endif %}" href="/">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link {% if url_name == "character" %}active{% endif %}" href="/character/">Character</a>
+			</li>
+  			<li class="nav-item">
+				<a class="nav-link {% if url_name == "items" %}active{% endif %}" href="/items/">Items</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link {% if url_name == "market" %}active{% endif %}" href="/market/">Market</a>
+			</li>
+		</ul>	
+		{% endwith %}
+	</div>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div>
+		{% block content %}
+		{% endblock %}
+	</div>
+</body>
+
+</html>
